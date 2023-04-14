@@ -9,7 +9,7 @@ interface HomeProps {
 }
  
 const Home: FC<HomeProps> = () => {
-  return ( 
+  return (
     <div></div>
    );
 }

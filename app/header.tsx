@@ -3,13 +3,14 @@ import Image from "next/image";
 import logo from "../public/logo.png"
 import Navbar from "@/components/Navbar";
 
+
 interface HeaderProps {
     
 }
  
 const Header: FC<HeaderProps> = () => {
     return ( 
-        <div className="flex flex-row">
+        <div className="flex flex-row space-x-[30px]">
             {/* logo */}
             <div>
                 <Image src={logo} alt={"Logo"} height={170} width={140} className=""/>

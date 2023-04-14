@@ -1,6 +1,9 @@
+"use client"
+
 import { FC, ReactNode } from "react";
 import { MENU_ITEMS } from "@/constants";
 import Link from "next/link";
+// import { useRouter } from 'next/router';
 
 
 interface NavbarProps {}
@@ -9,6 +12,8 @@ const Navbar: FC<NavbarProps> = () => {
     function items(value: { id: number; label: string; link: string; }, index: number, array: { id: number; label: string; link: string; }[]): ReactNode {
         throw new Error("Function not implemented.");
     }
+
+    // const router = useRouter();
 
     return ( 
         <nav>

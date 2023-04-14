@@ -1,6 +1,7 @@
 import './globals.css'
 import Header from './header'
 import Footer from './footer'
+import { Separator } from "@/components/ui/separator"
 
 export const metadata = {
   title: 'The Joy Ezeh Blog',
@@ -17,6 +18,7 @@ export default function RootLayout({
       
       <body>
         <Header/>
+        <Separator />
         {children}
         <Footer/>
         </body>
