@@ -3,7 +3,14 @@
 import { FC, ReactNode } from "react";
 import { MENU_ITEMS } from "@/constants";
 import Link from "next/link";
-// import { useRouter } from 'next/router';
+import {
+    NavigationMenu,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+  } from "@/components/ui/navigation-menu"
+import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
+  
 
 
 interface NavbarProps {}
@@ -16,18 +23,21 @@ const Navbar: FC<NavbarProps> = () => {
     // const router = useRouter();
 
     return ( 
-        <nav>
-            <ul className="flex flex-row justify-between space-x-4">
-                {MENU_ITEMS.map((items) => (
-                    <li key={items.id}>
-                        <Link href={items.link}>
-                            {items.label}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </nav>
-     );
+        <NavigationMenu>
+        <NavigationMenuList>
+          {MENU_ITEMS.map((items) => (
+            <NavigationMenuItem key={items.id}>
+            <Link href={items.link} legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                {items.label}
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          ))}
+        </NavigationMenuList>
+      </NavigationMenu>
+            
+    );
 }
  
 export default Navbar;
