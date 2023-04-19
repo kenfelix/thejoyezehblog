@@ -15,7 +15,8 @@ interface HeaderProps {
  
 const Header: FC<HeaderProps> = () => {
     return ( 
-        <div className="flex flex-row space-x-[30px]">
+        <>
+            <div className="flex flex-row space-x-[30px]">
             {/* logo */}
             <div>
                 <Image src={logo} alt={"Logo"} height={170} width={140} className=""/>
@@ -38,7 +39,9 @@ const Header: FC<HeaderProps> = () => {
                 {/* menus */}
                 <Navbar/>
             </div>
-        </div>
+            </div>
+            <Separator/>
+        </>
      );
 }
  

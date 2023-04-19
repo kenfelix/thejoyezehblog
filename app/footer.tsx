@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Separator } from "@/components/ui/separator";
 
 interface FooterProps {
     
@@ -6,7 +7,9 @@ interface FooterProps {
  
 const Footer: FC<FooterProps> = () => {
     return ( 
-        <div>footer</div>
+        <div>
+            <Separator/>
+        </div>
      );
 }
  
