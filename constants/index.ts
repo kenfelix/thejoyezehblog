@@ -50,36 +50,42 @@ export const latests = [
 
 export const Articles = [
   {
+    id: 1,
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img1,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
   {
+    id: 2,
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img2,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
   {
+    id: 3,
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img1,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
   {
+    id: 4,
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img2,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
   {
+    id: 5,
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img1,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
   {
+    id: 6,
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img2,

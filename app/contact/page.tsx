@@ -6,7 +6,9 @@ interface ContactProps {
  
 const Contact: FC<ContactProps> = () => {
     return ( 
-        <div>contact us</div>
+        <div className="flex flex-col items-center">
+
+        </div>
      );
 }
  

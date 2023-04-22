@@ -1,16 +1,26 @@
 import * as React from 'react';
 import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from './ui/card'
 import { Articles } from '@/constants';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 
-export interface IGridArticleProps {
+type ArticleType = {
+  id: number
+  date: string
+  title: string
+  image: StaticImageData
+  description: string
+}[]
+
+
+interface GridArticleProps {
+  articles: ArticleType
 }
 
-export function GridArticle (props: IGridArticleProps) {
+export const GridArticle : React.FC<GridArticleProps> = ( { articles=Articles} ) =>  {
   return (
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-          {Articles.map((article, index) => (
+          {articles.map((article, index) => (
           
         <Card key={index} className='border-none shadow-none'>
             <CardHeader className='px-0'>
@@ -34,3 +44,5 @@ export function GridArticle (props: IGridArticleProps) {
     </div>
   );
 }
+
+export default GridArticle;

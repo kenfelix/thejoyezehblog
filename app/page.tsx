@@ -7,7 +7,7 @@ import Timeline from '@/components/timelines';
 import Loadmore from '@/components/loadmore';
 import { GridArticle } from '@/components/gridarticles';
 import { Highlight } from '@/components/highlight';
-
+import { Articles } from '@/constants';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,7 +41,7 @@ const Home: FC<HomeProps> = () => {
               </div>
             </div>
             <div>
-              <GridArticle />
+              <GridArticle articles={Articles} />
               <Loadmore label='Load more' variant='default'/>
             </div>
           </div>
