@@ -16,11 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body>
+      <body className='h-[100vw] w-full'>
         <Header />
         {children}
         <Footer/>
-        </body>
+      </body>
     </html>
   )
 }

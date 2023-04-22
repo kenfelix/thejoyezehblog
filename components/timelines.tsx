@@ -19,7 +19,7 @@ interface TimelineProps {
  
 const Timeline: FC<TimelineProps> = () => {
     return ( 
-        <Tabs defaultValue="latest" className="w-[400px]">
+        <Tabs defaultValue="latest" className="w-full">
       <TabsList className="grid w-full grid-cols-2">
         <TabsTrigger value="latest">Latest</TabsTrigger>
         <TabsTrigger value="most viewed">Most viewed</TabsTrigger>

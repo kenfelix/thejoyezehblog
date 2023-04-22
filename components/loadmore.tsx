@@ -6,13 +6,14 @@ import { Button } from "@/components/ui/button"
 
 
 interface LoadmoreProps {
-    label: string
+  label: string
+  variant: any
 }
 
- const Loadmore: React.FC<LoadmoreProps> = ({label}) => {
+ const Loadmore: React.FC<LoadmoreProps> = ({label, variant='default'}) => {
   return (
-    <Button>
-          {label} <ArrowRight className="mr-2 h-4 w-4" />
+    <Button variant={variant}>
+          {label} <ArrowRight className={`mr-2 h-4 w-4`} />
     </Button>
   );
 }

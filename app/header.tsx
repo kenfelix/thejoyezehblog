@@ -16,18 +16,18 @@ interface HeaderProps {
 const Header: FC<HeaderProps> = () => {
     return ( 
         <>
-            <div className="flex flex-row space-x-[30px]">
+            <div className="flex flex-row flex-wrap">
             {/* logo */}
-            <div>
-                <Image src={logo} alt={"Logo"} height={170} width={140} className=""/>
+            <div className="w-[20%] max-w-[200px]">
+                <Image src={logo} alt={"Logo"} className="h-full w-full sm:h-170 sm:w-150 max-h-[200px]"/>
             </div>
 
             {/* content */}
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between w-[80%] px-[20px]">
                 {/* socials */}
-                <div className="pt-[10px] flex flex-row space-x-[400px]">
+                <div className="pt-[10px] flex flex-row w-full justify-between">
                     <Socials/>
-                    <div className="flex flex-row space-x-2">
+                    <div className="flex flex-row space-x-2 justify-end">
                         <Button variant={"ghost"}>
                             <NfcIcon className="mr-2 h-4 w-4"/>
                             Newsletter

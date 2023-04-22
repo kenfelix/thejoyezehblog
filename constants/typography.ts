@@ -8,7 +8,7 @@ export const Typhography = {
     list: "my-6 ml-6 list-disc [&>li]:mt-2",
     inlinecode: "relative rounded bg-slate-100 py-[0.2rem] px-[0.3rem] font-mono text-sm font-semibold text-slate-900 dark:bg-slate-800 dark:text-slate-400",
     lead: "text-xl text-slate-700 dark:text-slate-400",
-    large: "text-lg font-semibold text-slate-900 dark:text-slate-50",
+    large: "text-lg font-semibold dark:text-white",
     small: "text-sm font-medium leading-non",
     subtle: "text-sm text-slate-500 dark:text-slate-400", 
 }

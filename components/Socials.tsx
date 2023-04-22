@@ -9,9 +9,9 @@ interface SocialsProps {
  
 const Socials: FC<SocialsProps> = () => {
     return ( 
-        <div className="flex flex-row gap-2">
-            {SOCIAL_ITEMS.map((items) => (
-                <Button variant="custom">
+        <div className="hidden sm:flex flex-row gap-2">
+            {SOCIAL_ITEMS.map((items, index) => (
+                <Button key={index} variant="custom">
                     <items.icon className="h-[20px] w-[20px]"/>
                 </Button>
                 

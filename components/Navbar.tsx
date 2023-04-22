@@ -23,7 +23,7 @@ const Navbar: FC<NavbarProps> = () => {
     // const router = useRouter();
 
     return ( 
-        <NavigationMenu>
+        <NavigationMenu className="hidden sm:flex">
         <NavigationMenuList>
           {MENU_ITEMS.map((items) => (
             <NavigationMenuItem key={items.id}>
