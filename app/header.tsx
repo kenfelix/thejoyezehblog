@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { MENU_ITEMS, SOCIAL_ITEMS } from "@/constants";
 import Link from "next/link";
+import Subscribe from "@/components/subscribe";
 
 
 
@@ -40,10 +41,7 @@ const Header: FC<HeaderProps> = () => {
                 <div className="pt-[10px] flex flex-row w-full justify-end sm:justify-between items-center">
                     <Socials/>
                     <div className="flex flex-row space-x-2 justify-end">
-                        <Button variant={"ghost"}>
-                            <NfcIcon className="mr-2 h-4 w-4"/>
-                            Newsletter
-                        </Button>
+                        <Subscribe/>
                         <Input type="search" placeholder="Search" />
                     </div>
                         <div className="block sm:hidden ml-[10px]">

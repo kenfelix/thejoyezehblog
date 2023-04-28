@@ -56,62 +56,62 @@ const ArticleDetailed: FC<ArticleDetailedProps> = ({ article }) => {
 
 
     return ( 
-        <div className="flex flex-row p-[60px] gap-4">
+        <div className="flex lg:flex-row p-[20px] sm:p-[60px] gap-4">
             {/* main */}
-            <div className="flex flex-col gap-[20px] w-[70%]">
+            <div className="flex flex-col gap-[20px] w-full lg:w-[70%]">
                 <div className="flex flex-col gap-[20px] w-full p-[20px] bg-slate-50 ring-[1px] rounded-lg ring-slate-200 dark:bg-slate-900">
                 <Badge className="bg-slate-400 w-fit">Badge</Badge>
-                <h3 className="text-[30px] font-bold">{article.title}</h3>
-                <div className="flex gap-3">
-                    <p className="flex text-[14px] items-center gap-1">
+                <h3 className="text-[20px] sm:text-[30px] font-bold">{article.title}</h3>
+                <div className="flex text-[12px] sm:text-[14px] gap-3">
+                    <p className="flex items-center gap-1">
                         <span><UserIcon  className="w-[14px]"/></span>Joy Ezeh
                     </p>
-                    <p className="flex text-[14px] items-center gap-1">
+                    <p className="flex items-center gap-1">
                         <span><Clock  className="w-[14px]"/></span>1 week agao
                     </p>
-                    <p className="flex text-[14px] items-center gap-1 cursor-pointer">
+                    <p className="flex items-center gap-1 cursor-pointer">
                             <span><MessageCircle className="w-[14px]" onClick={scrollToMyRef} /></span>0
                     </p>
                 </div>
-                <div className="w-[400px] h-[300px]">
+                <div className="w-full h-[200px] sm:w-[400px] sm:h-[300px]">
                     <Image src={article.image} alt={""} className="w-full h-full object-cover"/>
                 </div>
-                <div className="text-[20px]">
+                <div className="text-[16px] sm:text-[20px]">
                     {article.description}
                 </div>
                 <div className="block mb-[50px]">
                     <Popover>
                         <PopoverTrigger>
-                            <Button className="flex text-[20px] items-center gap-1">
+                            <Button className="flex text-[16px] sm:text-[20px] items-center gap-1">
                                 Share this post <span><Share2  className="w-[20px] ml-1"/></span>
                                     </Button>
                         </PopoverTrigger>
                         <PopoverContent align="start" className=" flex flex-col bg-white gap-3">
-                            <p className="flex text-[14px] items-center gap-1 cursor-pointer">
-                                <span><Facebook  className="w-[14px]"/></span> Facebook
+                            <p className="flex text-[12px] sm:text-[14px] items-center gap-1 cursor-pointer">
+                                <span><Facebook  className="w-[12px]"/></span> Facebook
                             </p>
-                            <p className="flex text-[14px] items-center gap-1 cursor-pointer">
-                                <span><Twitter  className="w-[14px]"/></span> Twitter
+                            <p className="flex text-[12px] sm:text-[14px] items-center gap-1 cursor-pointer">
+                                <span><Twitter  className="w-[12px]"/></span> Twitter
                             </p>
-                            <p className="flex text-[14px] items-center gap-1 cursor-pointer">
-                                <span><Instagram  className="w-[14px]"/></span> Instagram
+                            <p className="flex text-[12px] sm:text-[14px] items-center gap-1 cursor-pointer">
+                                <span><Instagram  className="w-[12px]"/></span> Instagram
                             </p>
                          </PopoverContent>
                     </Popover>
                 </div>
                 
-                <Card>
-                    <CardHeader>
-                        <CardTitle className="text-[35px]">Comments</CardTitle>
+                <Card className="border-none sm:border">
+                    <CardHeader className="px-0 sm:p-6">
+                        <CardTitle className="text-[25px] sm:text-[35px]">Comments</CardTitle>
                         <CardDescription className="text-[18px]">Your email address will not be published. Required field are marked *</CardDescription>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className="px-0 sm:p-6">
                         <div className="flex flex-col gap-6" id="comments" ref={myRef}>
                             <div className="grid w-full gap-1.5">
                                 <Label htmlFor="message">Your reply</Label>
                                 <Textarea placeholder="Type your message here." id="message" className="h-[200px] bg-white"/>
                             </div>
-                            <div className="flex gap-4">
+                            <div className="flex flex-col sm:flex-row gap-4">
                                 <div className="grid w-full max-w-sm items-center gap-1.5">
                                     <Label htmlFor="name">Name</Label>
                                     <Input type="name" id="name" placeholder="Enter Name" className="bg-white"/>
@@ -123,9 +123,14 @@ const ArticleDetailed: FC<ArticleDetailedProps> = ({ article }) => {
                             </div>
                         </div>
                     </CardContent>
-                    <CardFooter>
+                    <CardFooter className="px-0 sm:p-6">
                         <Button>POST COMMENT</Button>
                     </CardFooter>
+                
+                <div className="flex lg:hidden w-full h-[200px] bg-slate-50 items-center justify-center">
+                    Ads
+                </div>
+                        
                 </Card>
                     {/* comments */}
                     <React.Fragment >
@@ -135,7 +140,7 @@ const ArticleDetailed: FC<ArticleDetailedProps> = ({ article }) => {
                             </div>
                             <div className="flex flex-col gap-2">
                                 <p className={Typhography.subtle}><span className="font-bold"> kenfelix </span>1 hour ago </p>
-                                <p className="text-xl">wondeful article. it really help me understand the topic better</p>
+                                <p className="text-lg sm:text-xl">wondeful article. it really help me understand the topic better</p>
                                 <div className="flex flex-row mt-5 gap-5 items-center">
                                     <div className="flex flex-row gap-1 items-center">
                                         <Reply color="gray" />
@@ -154,7 +159,7 @@ const ArticleDetailed: FC<ArticleDetailedProps> = ({ article }) => {
                                     </div>
                                     <div className="flex flex-col">
                                         <p className={Typhography.subtle}><span className="font-bold"> kenfelix </span>1 hour ago </p>
-                                        <p className="text-xl">wondeful article. it really help me understand the topic better</p>
+                                        <p className="text-lg sm:text-xl">wondeful article. it really help me understand the topic better</p>
                                     </div>
                                 </div> 
                                 <Separator className="my-2" />
@@ -163,16 +168,20 @@ const ArticleDetailed: FC<ArticleDetailedProps> = ({ article }) => {
                         <Separator className="my-2" />
                     </React.Fragment>
                 </div>
+
+                <div className="flex lg:hidden w-full h-[200px] bg-slate-50 items-center justify-center">
+                    Ads
+                </div>
                 {/* related stories */}
 
                 <Card className="bg-slate-50">
                     <CardHeader>
-                        <CardTitle>Related Posts</CardTitle>
+                        <CardTitle className="text-[25px] sm:text-[35px]">Related Posts</CardTitle>
                     </CardHeader>
-                    <CardContent className="grid grid-cols-2">
+                    <CardContent className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                         {Articles.map((item, index) => (
-                            <div key={index} className="flex flex-row gap-2 py-[8px]">
-                                <div className="w-[300px] h-[130px]">
+                            <div key={index} className="flex flex-col sm:flex-row gap-2 py-[8px]">
+                                <div className="w-full sm:w-[300px] h-[130px]">
                                     <Image src={item.image} alt={""} className="w-full h-full object-cover"/>
                                 </div>
                                 <div>
@@ -195,7 +204,7 @@ const ArticleDetailed: FC<ArticleDetailedProps> = ({ article }) => {
                 </Card>
 
             </div>
-            <div className="bg-slate-50 w-[30%] grid grid-col-1 items-center justify-center">
+            <div className="hidden bg-slate-50 w-[30%] lg:grid grid-col-1 items-center justify-center">
                 <p>ads</p>
                 <p>ads</p>
                 <p>ads</p>
