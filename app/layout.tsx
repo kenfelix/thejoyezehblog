@@ -16,10 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className='h-[100vw] w-full'>
-        <Header />
-        {children}
-        <Footer/>
+      <body className='h-screen w-full'>
+        <div >
+          <Header/>
+          {children}
+          <Footer/>
+        </div>
       </body>
     </html>
   )

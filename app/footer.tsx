@@ -1,12 +1,12 @@
 import { FC } from "react";
 import { Separator } from "@/components/ui/separator";
 import GraphicsLetter from "@/components/graphicletters";
-import { Typhography } from "@/constants/typography";
-import Loadmore from "@/components/loadmore";
+import { Typhography } from "@/constants/typography"
 import { Button } from "@/components/ui/button";
 import { MENU_ITEMS } from "@/constants";
 import Link from "next/link";
 import { SOCIAL_ITEMS } from "@/constants";
+import ContactUs from "@/components/contact-us";
 
 interface FooterProps {
     
@@ -20,7 +20,7 @@ const Footer: FC<FooterProps> = () => {
             <Separator />
             <div className="flex flex-col md:flex-row px-[20px] lg:px-[60px] h-[194px]">
                 <div className="flex flex-col items-center md:items-start justify-start pt-[30px] gap-[20px] w-full h-full">
-                    <div className="flex flex-col md:flex-row gap-3 items-center">
+                    <div className="flex flex-col md:flex-row gap-3 items-center justify-center">
                         <p className={Typhography.h4}>Links</p>
                         <div className="flex flex-col md:flex-row gap-2 items-center">
                             {MENU_ITEMS.map((item, index) => (
@@ -52,7 +52,7 @@ const Footer: FC<FooterProps> = () => {
                             © 2023 thejoyezeh. All rights reserved. | Powered by takjug.tech
                         </p>
                         <div className="hidden md:block">
-                            <Loadmore label="Contact us" variant='ghost'/>
+                                <ContactUs route={"/contact"}/>
                         </div>
                     </div>
                 </div>

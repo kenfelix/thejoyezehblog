@@ -8,7 +8,7 @@ export const MENU_ITEMS = [
     { id: 4, label: "Reviews", link: "/reviews" },
     { id: 3, label: "Archives", link: "/archives" },
     { id: 5, label: "Contact Us", link: "/contact" },
-    { id: 6, label: "Advertise", link: "/advert" },
+    { id: 6, label: "Advertise", link: "/contact" },
   ];
 
 export const SOCIAL_ITEMS = [
@@ -51,6 +51,7 @@ export const latests = [
 export const Articles = [
   {
     id: 1,
+    slug: "jame-brown",
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img1,
@@ -58,6 +59,7 @@ export const Articles = [
   },
   {
     id: 2,
+    slug: "greate-is-he",
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img2,
@@ -65,6 +67,7 @@ export const Articles = [
   },
   {
     id: 3,
+    slug: "james-bond-007",
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img1,
@@ -72,6 +75,7 @@ export const Articles = [
   },
   {
     id: 4,
+    slug: "flight-drone",
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img2,
@@ -79,6 +83,7 @@ export const Articles = [
   },
   {
     id: 5,
+    slug: "elon musk owns twitter",
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img1,
@@ -86,6 +91,7 @@ export const Articles = [
   },
   {
     id: 6,
+    slug: "takjug.tech-set-to-launch",
     date: "22-03-2023",
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
     image: img2,

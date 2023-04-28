@@ -27,7 +27,7 @@ interface HeaderProps {
  
 const Header: FC<HeaderProps> = () => {
     return ( 
-        <>
+        <div className="sticky transition-all duration-300 w-full top-0 z-50 bg-white">
             <div className="flex flex-row flex-wrap">
             {/* logo */}
             <div className="w-[20%] max-w-[200px]">
@@ -46,7 +46,7 @@ const Header: FC<HeaderProps> = () => {
                         </Button>
                         <Input type="search" placeholder="Search" />
                     </div>
-                        <div className="block sm:hidden ml-[20px]">
+                        <div className="block sm:hidden ml-[10px]">
                             <DropdownMenu>
                                 <DropdownMenuTrigger><MenuIcon className="justify-center"/></DropdownMenuTrigger>
                                 <DropdownMenuContent className="bg-white w-[200px]">
@@ -80,7 +80,7 @@ const Header: FC<HeaderProps> = () => {
             </div>
             </div>
             <Separator/>
-        </>
+        </div>
      );
 }
  
