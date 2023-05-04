@@ -4,11 +4,11 @@ import img2 from "../public/img2.jpg"
 
 export const MENU_ITEMS = [
     { id: 1, label: "Home", link: "/" },
-    { id: 2, label: "Trending", link: "/trending" },
-    { id: 4, label: "Reviews", link: "/reviews" },
-    { id: 3, label: "Archives", link: "/archives" },
-    { id: 5, label: "Contact Us", link: "/contact" },
-    { id: 6, label: "Advertise", link: "/contact" },
+    { id: 2, label: "Trending", link: "/home/trending" },
+    { id: 4, label: "Reviews", link: "/home/reviews" },
+    { id: 3, label: "Archives", link: "/home/archives" },
+    { id: 5, label: "Contact Us", link: "/home/contact" },
+    { id: 6, label: "Advertise", link: "/home/contact" },
   ];
 
 export const SOCIAL_ITEMS = [

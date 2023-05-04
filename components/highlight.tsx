@@ -25,7 +25,7 @@ export function Highlight(props: IHighlightProps) {
                   </div>
                   <div className='flex flex-col w-[60%]'>
                       <p className={`${Typhography.h4} overflow-hidden max-w-1`}>{article.title}</p>
-                      <p className={`${Typhography.small} text-red-500 cursor-pointer`} onClick={() => {router.push(`/articles/${article.slug}`)}}>read more</p>
+                      <p className={`${Typhography.small} text-red-500 cursor-pointer`} onClick={() => {router.push(`/home/articles/${article.slug}`)}}>read more</p>
                   </div>
           </div>
       ))}

@@ -52,7 +52,7 @@ const Footer: FC<FooterProps> = () => {
                             © 2023 thejoyezeh. All rights reserved. | Powered by takjug.tech
                         </p>
                         <div className="hidden md:block">
-                                <ContactUs route={"/contact"}/>
+                                <ContactUs route={"/home/contact"}/>
                         </div>
                     </div>
                 </div>

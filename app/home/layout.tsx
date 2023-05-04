@@ -1,10 +1,7 @@
-import './globals.css'
+import '../globals.css'
+import Header from './header'
+import Footer from './footer'
 
-
-export const metadata = {
-  title: 'The Joy Ezeh Blog',
-  description: 'blog created by kenfelix',
-}
 
 export default function RootLayout({
   children,
@@ -16,7 +13,9 @@ export default function RootLayout({
       
       <body className='h-screen w-full'>
         <div >
+          <Header/>
           {children}
+          <Footer/>
         </div>
       </body>
     </html>

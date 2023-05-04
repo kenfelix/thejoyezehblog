@@ -1,10 +1,9 @@
 import { FC } from "react";
 import Image from "next/image";
-import logo from "../public/logo.png"
+import logo from "./public/logo.png"
 import Navbar from "@/components/Navbar";
 import Socials from "@/components/Socials";
-import { Button } from "@/components/ui/button";
-import { NfcIcon, MenuIcon } from "lucide-react"
+import { MenuIcon } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
 

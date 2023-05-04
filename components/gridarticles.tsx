@@ -41,7 +41,7 @@ export const GridArticle: React.FC<GridArticleProps> = ({ articles = Articles })
             </CardContent>
             <CardFooter className='px-0 flex-col items-start'>
                       <p className='overflow-hidden max-h-[120px] text-gray-500'>{article.description}</p>
-                      <p className='text-red-500 cursor-pointer' onClick={() => {router.push(`articles/${article.slug}`)}}>read more</p>
+                      <p className='text-red-500 cursor-pointer' onClick={() => {router.push(`/home/articles/${article.slug}`)}}>read more</p>
             </CardFooter>
         </Card>
 
