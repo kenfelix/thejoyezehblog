@@ -1,5 +1,3 @@
-import Header from './header'
-import Footer from './footer'
 
 
 export default function RootLayout({
@@ -12,9 +10,7 @@ export default function RootLayout({
       
       <body className='h-screen w-full'>
         <div >
-          <Header/>
           {children}
-          <Footer/>
         </div>
       </body>
     </html>
