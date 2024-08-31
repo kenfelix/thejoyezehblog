@@ -20,31 +20,31 @@ export const SOCIAL_ITEMS = [
 
 export const latests = [
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
+    title: "Lorem ipsum dolor sit amet consectetur ",
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, rerum. Minus dolores",
+    title: "Lorem ipsum dolor sit amet consectetur  rerum. Minus dolores",
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, rerum. Minus dolores",
+    title: "Lorem ipsum dolor sit amet consectetur  rerum. Minus dolores",
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, rerum. Minus dolores",
+    title: "Lorem ipsum dolor sit amet consectetur  rerum. Minus dolores",
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, rerum. Minus dolores",
+    title: "Lorem ipsum dolor sit amet consectetur  rerum. Minus dolores",
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, rerum. Minus dolores",
+    title: "Lorem ipsum dolor sit amet consectetur  rerum. Minus dolores",
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, rerum. Minus dolores",
+    title: "Lorem ipsum dolor sit amet consectetur  rerum. Minus dolores",
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, rerum. Minus dolores",
+    title: "Lorem ipsum dolor sit amet consectetur  rerum. Minus dolores",
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, rerum. Minus dolores",
+    title: "Lorem ipsum dolor sit amet consectetur  rerum. Minus dolores",
   },
 ]
 
@@ -53,7 +53,7 @@ export const Articles = [
     id: 1,
     slug: "jame-brown",
     date: "22-03-2023",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
+    title: "Lorem ipsum dolor sit amet consectetur ",
     image: img1,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
@@ -61,7 +61,7 @@ export const Articles = [
     id: 2,
     slug: "greate-is-he",
     date: "22-03-2023",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
+    title: "Lorem ipsum dolor sit amet consectetur ",
     image: img2,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
@@ -69,7 +69,7 @@ export const Articles = [
     id: 3,
     slug: "james-bond-007",
     date: "22-03-2023",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
+    title: "Lorem ipsum dolor sit amet consectetur ",
     image: img1,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
@@ -77,7 +77,7 @@ export const Articles = [
     id: 4,
     slug: "flight-drone",
     date: "22-03-2023",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
+    title: "Lorem ipsum dolor sit amet consectetur ",
     image: img2,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
@@ -85,7 +85,7 @@ export const Articles = [
     id: 5,
     slug: "elon musk owns twitter",
     date: "22-03-2023",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
+    title: "Lorem ipsum dolor sit amet consectetur ",
     image: img1,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
@@ -93,7 +93,7 @@ export const Articles = [
     id: 6,
     slug: "takjug.tech-set-to-launch",
     date: "22-03-2023",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,",
+    title: "Lorem ipsum dolor sit amet consectetur ",
     image: img2,
     description: "Bala blu symbol recruit blu generated 50million youths pdapc down-payment generated broooom down-payment 50million roasted electricty cassava generated blu line down-payment blu transmission 50million super our down-payment bulaba line generated bala bala blu roasted townhall highway army recruit agbado line from eba corn blu umbreleda highway cassava 50million down-payment eneme"
   },
@@ -111,5 +111,28 @@ export const Letters = [
   },
   {
     image: img2,
+  },
+]
+
+export const filters = [
+  {
+    value: "latest",
+    label: "Latest",
+  },
+  {
+    value: "ascending",
+    label: "Ascending",
+  },
+  {
+    value: "descending",
+    label: "Descending",
+  },
+  {
+    value: "published",
+    label: "Published",
+  },
+  {
+    value: "unpublished",
+    label: "Unpublished",
   },
 ]
